@@ -1,1 +1,43 @@
-<h1>Chatroom root page</h1>
+<h2 class="ui center aligned medium icon header">
+  <i class="inverted teal circular gem icon" id="gem-icon"></i>
+  Say something
+</h2>
+
+<div class="ui two column grid">
+  <div class="four wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui bordered inverted vertical pointing menu">
+          <a class="item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="twelve wide column">
+    <div class="ui medium feed">
+      <div class="ui fluid raised card chatbox">
+        <div class="content">
+          <%= render  @messages %>
+        </div>
+        <div class="extra content">
+          <form class="ui reply form">
+            <div class="field">
+              <div class="ui fluid icon input">
+                <input type="text" placeholder="Enter a message...">
+                <i class="bordered inverted teal edit icon"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

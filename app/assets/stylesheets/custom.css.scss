@@ -3,9 +3,23 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  background: #f6f6f6 !important;
 }
 
 /* Global */
 .container {
-  margin-top: 9vh;
+  margin-top: 11vh;
+}
+
+/* Navbar */
+#sign-up-btn {
+  background-color: #2bb1ab;
+}
+
+/* Homepage */
+#gem-icon {
+  color: #2bb1ab;
+}
+.chatbox {
+  height: 50vh;
 }
