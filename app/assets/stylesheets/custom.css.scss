@@ -21,5 +21,13 @@ body {
   color: #2bb1ab;
 }
 .chatbox {
-  height: 450px;
+  height: 60vh;
+}
+#messages {
+  overflow: auto;
+}
+.input {
+  button {
+    display: none;
+  }
 }
