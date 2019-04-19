@@ -1,6 +1,6 @@
-<h1 class="ui center aligned header">Welcome to MessageMe | Chat In Style</h1>
+<h1 class="ui center aligned header">Welcome to MessageMe | Chatting In Style</h1>
 <h2 class="ui center aligned medium icon header">
-  <i class="inverted teal circular bug icon" id="gem-icon"></i>
+  <i class="inverted teal circular envelope icon" id="gem-icon"></i>
   Login or Sign Up to continue...
 </h2>
 
@@ -22,14 +22,11 @@
             <i class="lock icon"></i>
           </div>
         </div>
-        <%= f.submit "Login", class: "ui teal small submit button" %>
+        <%= f.submit "Login", class: "ui teal big submit button" %>
       <% end %>
     </div>
     <div class="middle aligned column">
-      <div class="ui black big button">
-        <i class="signup icon"></i>
-        Sign Up
-      </div>
+      <%= link_to  "Sign Up", signup_path, class: "ui black big button signup-btn" %>
     </div>
   </div>
   <div class="ui vertical divider">
