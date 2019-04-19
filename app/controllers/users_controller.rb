@@ -11,9 +11,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      flash[:success] = "Hey there, #{@user.username}! Welcome to Stylts"
+      flash[:success] = "Hey there, #{@user.username}! Welcome to MessageMe"
       redirect_to root_path
     else
+      flash.now[:error] = 'Invalid sign up credentials'
       render 'new'
     end
   end
