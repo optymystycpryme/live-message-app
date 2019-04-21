@@ -68,3 +68,4 @@ group :production do
 end
 
 gem 'pg'
+gem 'redis', '~> 4.1'
